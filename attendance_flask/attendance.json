@@ -1,0 +1,27 @@
+[
+    {
+        "student_name": "John Doe",
+        "date": "2026-01-05",
+        "status": "present"
+    },
+    {
+        "student_name": "John Doe",
+        "date": "2026-01-05",
+        "status": "present"
+    },
+    {
+        "student_name": "John Doe",
+        "date": "2026-01-05",
+        "status": "present"
+    },
+    {
+        "student_name": "John Doe",
+        "date": "2026-01-05",
+        "status": "present"
+    },
+    {
+        "student_name": "John Dim",
+        "date": "2026-01-05",
+        "status": "present"
+    }
+]
