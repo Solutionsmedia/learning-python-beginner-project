@@ -1,0 +1,136 @@
+:root {
+    --primary: #4F46E5;
+    --primary-hover: #4338CA;
+    --bg-main: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    --border-soft: #E5E7EB;
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* BACKGROUND LAYER (OPTIONAL IMAGE LATER) */
+.login-box {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        #4F46E5 0%,
+        #6366F1 50%,
+        #818CF8 100%
+    );
+    z-index: -1;
+}
+
+/* CENTER CONTAINER */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* IMG */
+.img {
+    width: 150px;          /* change this to 60px, 80px, 120px if you want */
+    display: block;
+    margin: 0 auto 15px;  /* center + space below image */
+}
+
+/* LOGIN CARD */
+.login-card {
+    background: var(--bg-card);
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+.login-card h1 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+    font-size: 13px;
+    color: var(--text-main);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bolder;
+}
+
+input {
+    padding: 11px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-soft);
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(79,70,229,0.15);
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}
+
+/* FOOTER TEXT */
+.footer-text {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 28px 22px;
+    }
+}

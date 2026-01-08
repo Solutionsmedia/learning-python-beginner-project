@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taskify | Dashboard</title>
+    <link rel="stylesheet" href="../static/task.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+     <img src="../static/assets/computerman.png" class="img" alt="taskify img">
+    <h2>Taskify</h2>
+    <span class="user">Welcome, Student</span>
+</nav>
+
+<!-- MAIN -->
+<div class="container">
+
+    <div class="card">
+
+        <h3>Task Dashboard</h3>
+        <p class="subtitle">Manage your daily tasks</p>
+
+        <!-- ADD TASK -->
+        <form class="task-form">
+            <input type="text" placeholder="Enter new task">
+            <input type="text" placeholder="Enter Description">
+            <select id=status name="status">
+                <label>Select Your Status</label>
+                <option>---select your status</option>
+                <option for= status value="pending">Pending</option>
+                <option for= status value="done">Done</option>
+                
+
+            </select>
+            <button>Add Task</button>
+        </form>
+
+        <!-- TASK TABLE -->
+        <table class="task-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Finish Math Homework</td>
+                    <td>08 Jan 2026</td>
+                    <td><span class="badge pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Study for Test</td>
+                    <td>08 Jan 2026</td>
+                    <td><span class="badge done">Done</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
