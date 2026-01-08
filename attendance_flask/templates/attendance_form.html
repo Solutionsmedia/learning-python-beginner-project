@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Attendancify Attendance</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<main>
+    <header class="markheader">
+        <h1>Mark Attendance</h1>
+    </header>
+    <section>
+        {% if error %}
+  <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    {% if success %}
+  <p style="color:green;">{{ success }}</p>
+    {% endif %}
+
+        <form action="/attendance" method="post">
+            <label for="student_name">Name</label>
+            <input type="text"
+            id="student_name"
+            name="student_name"
+            placeholder="Your Name For Attendance" required>
+            <fieldset>
+                <legend>Select Attendance Status</legend>
+                <label for="present">Present</label>
+                <input id="present" type="radio" name="status" value="Present">
+                <label for="absent">Absent</label>
+                <input id="absent" type="radio" name="status" value="Absent">
+            </fieldset>
+            <button type="submit">Mark Attendance</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
+
+
+
+
+<!-- <select name="status" required>
+                    <option value="">-----Select a Status</option>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                    </select> -->

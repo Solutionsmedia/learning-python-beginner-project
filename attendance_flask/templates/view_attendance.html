@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendancify - View Attendance</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>View Attendance</h1>
+    </header>
+
+    <article>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% if attend_data %}
+                    {% for row in attend_data %}
+                        <tr>
+                            <td>{{ row.student_name }}</td>
+                            <td>{{ row.status }}</td>
+                            <td>{{ row.date }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="3">No attendance records found.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </article>
+</main>
+
+</body>
+</html>

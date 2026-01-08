@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #FAF5FF;
+  color: #111827;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: #6D28D9;
+}
+
+.header h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.header img {
+  height: 45px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #5B21B6;
+}
+
+main > header {
+  height: 90vh;
+  background-image: url("../static/assets/strategic84.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+main > header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+main > header * {
+  position: relative;
+}
+
+main > header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+main > header h2 {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  color: #6D28D9;
+  margin-bottom: 15px;
+}
+
+
+article {
+  margin-top: 20px;
+}
+
+footer {
+  background: #6D28D9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form {
+  
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  margin-top: 20px;
+  border: none;
+}
+
+fieldset label {
+  margin-right: 15px;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background: #6D28D9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5B21B6;
+}
+
+
+.hero a{
+  background-color:#5B21B6;
+  width:150px;
+  padding: 20px;
+  margin-top:3%;
+  padding-top:20px;
+  font-size:medium;
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border-radius: 10%;
+  color: rgb(247, 236, 255);
+  text-decoration:None;
+}
+
+.hero a:hover{
+  box-shadow:0 4px 10px #5B21B6;
+}
+
+.markheader{
+  height: 90vh;
+  background-image: url("../static/assets/strategic84.png");
+  background-size: cover;
+  height:250px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+
+}
+

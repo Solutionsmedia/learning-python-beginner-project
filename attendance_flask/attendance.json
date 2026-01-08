@@ -23,5 +23,20 @@
         "student_name": "John Dim",
         "date": "2026-01-05",
         "status": "present"
+    },
+    {
+        "student_name": "Samuel",
+        "date": "2026-01-08",
+        "status": "Present"
+    },
+    {
+        "student_name": "Seyi",
+        "date": "2026-01-08",
+        "status": "Present"
+    },
+    {
+        "student_name": "Praise",
+        "date": "2026-01-08",
+        "status": "Present"
     }
 ]

@@ -41,7 +41,7 @@ class Database:
                     return True
         except Exception as e:
             raise DatabaseError(
-                f"System level error occured while appending and writing the information, system says {e}")
+                f"{e}")
 
     def write_db(self, data):
         try:
@@ -56,5 +56,6 @@ class Database:
         for entry in db:
             if entry['student_name'].strip().lower() == data['student_name'].strip().lower():
                 if data['date'] == entry['date']:
-                    raise AttendanceError("You have marked your attendance.")
+                    raise AttendanceError(
+                        "You have marked your attendance already.")
         return True
